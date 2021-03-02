@@ -532,6 +532,7 @@ function environmentScrolling(group,environmentScrollingSpeed){
       //if group is bricks or mountains, randomize its x position
       if(group===pipes||group===mountains){
         element.position.x=random(50,gameConfig.screenX)+gameConfig.screenX;
+	element.position.y=random(gameConfig.screenY*0.35,gameConfig.screenY*0.75);
       }
 
       //if group is clouds, randomize its x & y position
